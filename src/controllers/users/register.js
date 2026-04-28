@@ -35,7 +35,7 @@ export const register = async (req, res) =>{
 
     } catch(error){
         return res.status(httpstatus.INTERNAL_SERVER_ERROR).json({
-            statuscode: httpstaus.INTERNAL_SERVER_ERROR,
+            statuscode: httpstatus.INTERNAL_SERVER_ERROR,
             success: false,
             message: "An error occurred during registration",
             error: error.message,
