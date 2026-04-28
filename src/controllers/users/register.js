@@ -1,4 +1,4 @@
-import httpstaus from "http-status";
+import httpstatus from "http-status";
 import User from "../../models/user.js";
 
 //controller for user registration
