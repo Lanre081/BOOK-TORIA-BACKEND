@@ -5,7 +5,7 @@ import httpstatus from "http-status";
 export const createBlog = async (req, res) => {
     try{
           // 1. Get blog data from the request body
-          const {title, content, category, taggs,} = req.body;
+          const {title, content, category, tags,} = req.body;
          // const author = req.user.id; // Assuming user is authenticated and user ID is available in req.user
          // 2. Define the blog variable to store the created blog post
           let blog;
