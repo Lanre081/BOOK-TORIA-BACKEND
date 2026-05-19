@@ -20,7 +20,7 @@ export const createBlog = async (req, res) => {
             })
          }
           // 4. Create a new blog post
-          blog = await Blog.create({
+         const blog = await Blog.create({
             title,
             content,
             category,
