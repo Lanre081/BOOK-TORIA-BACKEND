@@ -4,7 +4,7 @@ import fetchBlogs from "../controllers/blog/fetchBlogs.js"
 import fetchBlogById from "../controllers/blog/fetchBlogById.js";
 import { updateBlog } from "../controllers/blog/update.js";
 const router = express.Router();
-router.post("/", createBlog);
+router.post("/create", createBlog);
 router.get("/fetch", fetchBlogs);
 router.get("/details/:id", fetchBlogById);
 router.put("/update/:id", updateBlog);

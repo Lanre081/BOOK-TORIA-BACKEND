@@ -8,7 +8,7 @@ export const createBlog = async (req, res) => {
           const {title, content, category, tags,} = req.body;
          // const author = req.user.id; // Assuming user is authenticated and user ID is available in req.user
          // 2. Define the blog variable to store the created blog post
-          let blog;
+          //let blog;
          //3. Check if blog with the same title already exists
          const existingBlog = await Blog.findOne({title});
          if(existingBlog){
